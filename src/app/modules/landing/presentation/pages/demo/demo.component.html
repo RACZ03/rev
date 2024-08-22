@@ -1,0 +1,9 @@
+<div class="p-10">
+  <h1 class="font-medium text-2xl">Demo</h1>
+  <p class="mt-4">Data from Store:</p>
+  @if (demo$ | async; as demo) {
+    {{ demo | json }}
+  } @else {
+    <p class="mt-4">No data</p>
+  }
+</div>
