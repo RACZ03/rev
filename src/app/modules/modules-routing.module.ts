@@ -1,6 +1,6 @@
 import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
-import { routes } from '@config/module.routes';
+import { routes } from '@app/config/routes/module.routes';
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
