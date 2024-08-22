@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { ExtraOptions, RouterModule } from '@angular/router';
-import { routes } from '@config/app.routes';
+import { routes } from '@app/config/routes/app.routes';
 
 const config: ExtraOptions = {
   useHash: false,
