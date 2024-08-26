@@ -192,7 +192,54 @@ npm install
 To run the tests:
 
 ```bash
-npm run test
+ng test
+```
+
+To run the tests width coverage
+
+```bash
+ng test --code-coverage
+```
+
+Test File Structure 
+
+```
+
+app/
+│
+├── tests/
+│   ├── core/
+│   │   ├── services/
+│   │   │   └── example.service.spec.ts
+│   │   ├── utils/
+│   │   │   └── example.util.spec.ts
+│   │   └── interceptors/
+│   │       └── example.interceptor.spec.ts
+│   │
+│   ├── modules/
+│   │   ├── landing/
+│   │   │   ├── application/
+│   │   │   │   └── example.service.spec.ts
+│   │   │   ├── data/
+│   │   │   │   └── example.data.spec.ts
+│   │   │   ├── domain/
+│   │   │   │   └── example.domain.spec.ts
+│   │   │   └── presentation/
+│   │   │       ├── components/
+│   │   │       │   └── example.component.spec.ts
+│   │   │       └── pages/
+│   │   │           └── example.page.spec.ts
+│   │
+│   └── shared/
+│       ├── components/
+│       │   └── example.component.spec.ts
+│       ├── directives/
+│       │   └── example.directive.spec.ts
+│       └── pipes/
+│           └── example.pipe.spec.ts
+│
+
+
 ```
 
 The app should always have passing tests as it is integrated in our in the
