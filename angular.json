@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "revert-app": {
+    "niccoders": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -77,10 +77,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "revert-app:build:production"
+              "buildTarget": "niccoders:build:production"
             },
             "development": {
-              "buildTarget": "revert-app:build:development"
+              "buildTarget": "niccoders:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -88,7 +88,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "revert-app:build"
+            "buildTarget": "niccoders:build"
           }
         },
         "test": {
