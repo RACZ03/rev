@@ -20,4 +20,14 @@ export const routes: Routes = [
       },
     ],
   },
+  {
+    path: '',
+    children: [
+      {
+        path: 'login',
+        loadChildren: () =>
+          import('../../auth/login/login.module').then(m => m.LoginModule),
+      },
+    ],
+  },
 ];

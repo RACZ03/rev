@@ -7,6 +7,9 @@ import { AppComponent } from './app.component';
 import { NgxsModule } from '@ngxs/store';
 import { DemoState } from './modules/landing/application/store/demo';
 import { landingConfig } from './modules/landing/application/landing.config';
+import { loginConfig } from './auth/login/application/login.config';
+import { forgotPasswordConfig } from './auth/forgot-password/application/forgot-password.config';
+import { createPasswordConfig } from './auth/create-password/application/create-password.config';
 
 @NgModule({
   declarations: [AppComponent],
@@ -17,7 +20,12 @@ import { landingConfig } from './modules/landing/application/landing.config';
     HttpClientModule,
     NgxsModule.forRoot([DemoState]),
   ],
-  providers: [...landingConfig],
+  providers: [
+    ...landingConfig,
+    ...loginConfig,
+    ...forgotPasswordConfig,
+    ...createPasswordConfig,
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
