@@ -3,12 +3,8 @@ import { CommonModule } from '@angular/common';
 
 import { CreatePasswordRoutingModule } from './create-password-routing.module';
 
-
 @NgModule({
   declarations: [],
-  imports: [
-    CommonModule,
-    CreatePasswordRoutingModule
-  ]
+  imports: [CommonModule, CreatePasswordRoutingModule],
 })
-export class CreatePasswordModule { }
+export class CreatePasswordModule {}
