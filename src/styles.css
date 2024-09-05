@@ -16,6 +16,10 @@
     --bg-primary-light-color: #1a1a1a;
 }
 
+body {
+    font-family: 'Poppins', sans-serif;
+}  
+
 .full-screen {
     height: 100vh;
 }
