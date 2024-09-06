@@ -3,14 +3,7 @@
 :root {
     --primary-color: #f3f3f3;
     --secondary-color: #151515;
-    --tertiary-color: #f3f3f3;
-    --quaternary-color: #f3f3f3;
-    --quinary-color: #f3f3f3;
-    --senary-color: #f3f3f3;
-    --septenary-color: #f3f3f3;
-    --octonary-color: #f3f3f3;
-    --nonary-color: #f3f3f3;
-    --denary-color: #f3f3f3;
+    --tertiary-color: #1E2B2E;
 
     --bg-primary-color: #151515;
     --bg-primary-light-color: #1a1a1a;
@@ -30,4 +23,19 @@ body {
 
 .bg-primary-light {
     background-color: var(--bg-primary-light-color);
+}
+
+.bg-about {
+    background: linear-gradient(180deg, var(--secondary-color) 0%, var(--tertiary-color) 50%, var(--secondary-color) 100%);
+}
+
+.input-style {
+   border-radius: 15px;
+    border: 1px solid #868686;
+    background: rgba(26, 43, 40, 0.00);
+}
+
+.input-style:focus {
+    border-color: #2563EB; /* border-blue-600 */
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.5); /* ring-blue-600 */
 }

@@ -5,21 +5,24 @@
     <div class="hidden lg:block text-2xl md:text-3xl font-bold">
       <img
         src="./assets/img/revert.png"
-        alt=""
+        alt="Revert logo"
         width="180"
         height="54"
+        loading="lazy"
         class="md:w-243 md:h-74 lg:w-230 lg:h-68 xl:w-233 xl:h-68 2xl:w-243 2xl:h-74 md:hidden xl:block" />
     </div>
     <nav
       class="hidden lg:flex space-x-4 md:space-x-6 lg:space-x-8 items-center">
       <a
-        href="#"
+        [routerLink]="['/modules/landing']"
+        tabindex="0"
         class="text-[18px] md:text-[20px] lg:text-[20px] xl:text-[24px] font-normal leading-[25px] md:leading-[35px] lg:leading-[45px]"
         >Home</a
       >
       <div class="relative group">
         <a
           href="#"
+          tabindex="1"
           class="text-[18px] md:text-[20px] lg:text-[20px] xl:text-[24px] font-normal leading-[25px] md:leading-[35px] lg:leading-[45px]">
           Markets
           <svg
@@ -52,6 +55,7 @@
       <div class="relative group">
         <a
           href="#"
+          tabindex="2"
           class="text-[18px] md:text-[20px] lg:text-[20px] xl:text-[24px] font-normal leading-[25px] md:leading-[35px] lg:leading-[45px]">
           Our tech
           <svg
@@ -93,24 +97,34 @@
       </div>
 
       <a
-        href="#"
+        (click)="scrollToSection('about-us')"
+        (keydown.enter)="scrollToSection('about-us')"
+        (keydown.space)="scrollToSection('about-us')"
+        tabindex="3"
+        role="button"
         class="text-[18px] md:text-[22px] lg:text-[20px] xl:text-[24px] font-normal leading-[25px] md:leading-[35px] lg:leading-[45px]"
         >About us</a
       >
       <a
-        href="#"
+        (click)="scrollToSection('contact')"
+        (keydown.enter)="scrollToSection('contact')"
+        (keydown.space)="scrollToSection('contact')"
+        tabindex="4"
+        role="button"
         class="text-[18px] md:text-[22px] lg:text-[20px] xl:text-[24px] font-normal leading-[25px] md:leading-[35px] lg:leading-[45px]"
         >Contact</a
       >
       <div class="flex space-x-3 md:space-x-4">
-        <button
+        <a
+          [routerLink]="['/auth/sign-in']"
           class="px-3 md:px-4 py-1 border border-white rounded-full hover:bg-gray-700 text-[18px] md:text-[20px] lg:text-[20px] xl:text-[24px] md:leading-[25px] lg:leading-[30px] xl:leading-[28px] 2xl:leading-[35px]">
           Sign In
-        </button>
-        <button
+        </a>
+        <a
+          [routerLink]="['/auth/sign-up']"
           class="px-3 md:px-4 py-1 border border-white rounded-full hover:bg-gray-700 text-[18px] md:text-[20px] lg:text-[20px] xl:text-[24px] md:leading-[25px] lg:leading-[30px] xl:leading-[32px] 2xl:leading-[35px]">
           Sign Up
-        </button>
+        </a>
       </div>
     </nav>
     <!-- Mobile Menu -->
@@ -156,36 +170,53 @@
   <div class="pl-16">
     <h2 class="text-2xl font-bold mb-4">Menu</h2>
     <nav class="mt-6 space-y-6">
-      <a href="#" class="block flex items-center text-md">
+      <a
+        [routerLink]="['/modules/landing']"
+        tabindex="0"
+        class="block flex items-center text-md">
         <span class="w-3 h-3 bg-[#00A8F1] rounded-full inline-block mr-4"></span
         >Home
       </a>
-      <a href="#" class="block flex items-center text-md">
+      <a href="#" class="block flex items-center text-md" tabindex="1">
         <span class="w-3 h-3 bg-[#00A8F1] rounded-full inline-block mr-4"></span
         >Markets
       </a>
-      <a href="#" class="block flex items-center text-md">
+      <a href="#" class="block flex items-center text-md" tabindex="2">
         <span class="w-3 h-3 bg-[#00A8F1] rounded-full inline-block mr-4"></span
         >Our tech
       </a>
-      <a href="#" class="block flex items-center text-md">
+      <a
+        (click)="scrollToSection('about-us')"
+        (keydown.enter)="scrollToSection('about-us')"
+        (keydown.space)="scrollToSection('about-us')"
+        tabindex="3"
+        role="button"
+        class="block flex items-center text-md">
         <span class="w-3 h-3 bg-[#00A8F1] rounded-full inline-block mr-4"></span
         >About us
       </a>
-      <a href="#" class="block flex items-center text-md">
+      <a
+        (click)="scrollToSection('contact')"
+        (keydown.enter)="scrollToSection('contact')"
+        (keydown.space)="scrollToSection('contact')"
+        tabindex="4"
+        role="button"
+        class="block flex items-center text-md">
         <span class="w-3 h-3 bg-[#00A8F1] rounded-full inline-block mr-4"></span
         >Contact
       </a>
     </nav>
     <div class="mt-28 space-y-4 flex flex-col items-end mr-5">
-      <button
+      <a
+        [routerLink]="['/auth/sign-in']"
         class="w-[120px] px-3 py-1 border border-white rounded-full hover:bg-gray-700">
         Sign In
-      </button>
-      <button
+      </a>
+      <a
+        [routerLink]="['/auth/sign-up']"
         class="w-[120px] px-3 py-1 border border-white rounded-full hover:bg-gray-700">
         Sign Up
-      </button>
+      </a>
     </div>
   </div>
 </div>

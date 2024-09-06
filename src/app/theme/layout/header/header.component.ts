@@ -14,4 +14,14 @@ export class HeaderComponent {
   closeMenu(): void {
     this.isMenuClosed = true;
   }
+
+  scrollToSection(section: string) {
+    const element = document.getElementById(section) as HTMLElement | null;
+
+    if (!element) {
+      return;
+    }
+
+    element.scrollIntoView({ behavior: 'smooth' });
+  }
 }
