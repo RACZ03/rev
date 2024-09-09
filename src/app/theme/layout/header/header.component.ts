@@ -17,7 +17,13 @@ export class HeaderComponent {
     this.isMenuClosed = true;
   }
 
-  navigateToLogin() {
-    this.router.navigate(['/auth/login']);
+  scrollToSection(section: string) {
+    const element = document.getElementById(section) as HTMLElement | null;
+
+    if (!element) {
+      return;
+    }
+
+    element.scrollIntoView({ behavior: 'smooth' });
   }
 }

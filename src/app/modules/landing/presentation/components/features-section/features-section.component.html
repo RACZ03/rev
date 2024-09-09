@@ -1,0 +1,74 @@
+<section
+  class="mt-60 text-center justify-center items-center px-6 md:px-12 lg:px-24">
+  <div
+    class="flex flex-col md:flex-row justify-center items-center space-x-0 md:space-x-10 space-y-6 md:space-y-0 mb-12">
+    @for (item of features; track $index) {
+      <div class="flex flex-col items-center w-full md:w-85">
+        <div
+          class="border-3 border-current rounded-full w-16 h-16 flex items-center justify-center text-green-500">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="82"
+            height="82"
+            viewBox="0 0 82 82"
+            fill="none">
+            <g clip-path="url(#clip0_2182_6)">
+              <path
+                d="M22.9477 45.3669C22.7569 45.1614 22.586 44.9412 22.4392 44.7123C22.2917 44.4821 22.163 44.2358 22.0569 43.9802C21.7025 43.1361 21.6064 42.2245 21.7559 41.355C21.9054 40.4915 22.2978 39.666 22.9197 38.9874L23.1466 38.7538C24.6767 37.2957 26.9977 37.0241 28.8181 38.1192C29.0784 38.2747 29.3266 38.4595 29.5582 38.6711L29.5809 38.6917C30.8695 39.9276 33.0496 41.9489 34.481 43.2228L35.7095 44.3246L50.7455 28.5525C50.9571 28.3343 51.1899 28.1388 51.4362 27.968C51.6884 27.7938 51.9534 27.6463 52.227 27.5269C52.5032 27.4061 52.7955 27.3113 53.0945 27.2459C53.3928 27.1799 53.6971 27.1425 53.9994 27.1358H54.0167C54.3177 27.1325 54.6126 27.1538 54.9116 27.2045C55.2032 27.2539 55.4961 27.3333 55.8011 27.4508C56.0821 27.5582 56.3517 27.693 56.6066 27.8538C56.8501 28.008 57.0877 28.1915 57.3113 28.4024L57.4194 28.5005C57.6302 28.7093 57.8204 28.9362 57.9866 29.1771C58.1574 29.4234 58.3036 29.6883 58.4217 29.9632C58.5438 30.2395 58.6385 30.5318 58.7046 30.8301C58.7713 31.123 58.8074 31.4273 58.8147 31.7376V31.8911C58.812 32.1574 58.7867 32.4276 58.7386 32.6946C58.6859 32.9848 58.6065 33.2705 58.5011 33.5427C58.3943 33.8217 58.2575 34.0933 58.096 34.3502C57.9372 34.6018 57.7503 34.8433 57.5408 35.0642L39.3771 54.1228C39.1635 54.351 38.9347 54.5512 38.6951 54.7221C38.4488 54.8982 38.1833 55.0497 37.9057 55.1765C37.6274 55.302 37.3378 55.4014 37.0461 55.4701C36.7559 55.5395 36.4529 55.5809 36.1453 55.5949L36.0619 55.5969C35.7796 55.6029 35.5013 55.5862 35.2337 55.5449L35.1656 55.5315C34.8887 55.4848 34.6191 55.4154 34.3615 55.3246C34.0806 55.2245 33.8056 55.0958 33.5434 54.9409L33.5014 54.9142C33.2538 54.7648 33.0229 54.5959 32.8127 54.4111L32.7706 54.371C31.7163 53.3928 30.5705 52.3971 29.412 51.3908C27.4054 49.6471 24.622 47.132 22.9537 45.3716L22.9477 45.3669ZM41 0C52.3177 0 62.573 4.59315 69.997 12.003C77.4069 19.427 81.9993 29.6823 81.9993 41C81.9993 52.3184 77.4062 62.5737 69.997 69.9976C62.5737 77.4075 52.3177 82 41 82C29.6816 82 19.4263 77.4075 12.0024 69.9976C4.59248 62.5737 0 52.3177 0 40.9993C0 29.6823 4.59248 19.427 12.0024 12.003C19.427 4.59315 29.6816 0 41 0ZM64.6624 17.3376C58.6078 11.2823 50.2424 7.53802 41 7.53802C31.757 7.53802 23.3915 11.2823 17.3369 17.3376C11.2823 23.3922 7.53802 31.7577 7.53802 40.9993C7.53802 50.2424 11.2823 58.6078 17.3369 64.6624C23.3915 70.717 31.757 74.462 41 74.462C50.2424 74.462 58.6078 70.7177 64.6624 64.6624C70.717 58.6072 74.4613 50.2424 74.4613 40.9993C74.4613 31.7577 70.7177 23.3922 64.6624 17.3376Z"
+                fill="#5EDD00" />
+            </g>
+            <defs>
+              <clipPath id="clip0_2182_6">
+                <rect width="82" height="82" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+        <p class="mt-4 text-center lg:text-1xl xl:text-2xl">
+          {{ item.text }}
+        </p>
+      </div>
+    }
+  </div>
+</section>
+
+<section
+  class="relative bg-primary min-h-screen lg:h-[146vh] xl:h-[152vh] 2xl:h-[122vh] lex flex-col justify-center items-start text-left px-6 md:px-12 lg:px-24 overflow-hidden">
+  <img
+    src="./assets/img/bg-layout-2.png"
+    alt="Background image"
+    class="absolute inset-0 lg:w-[70%] lg:mt-[35%] xl:w-[80%] xl:mt-[23%] 2xl:w-[80%] 2xl:mt-[15%]" />
+
+  <div class="text-left mt-32">
+    <h2
+      class="text-4xl md:text-2xl lg:text-3xl xl:text-5xl 2xl:text-7xl font-bold">
+      Still paying for the cost of uncertainty?
+    </h2>
+    <p class="mt-10 text-lg md:text-2xl lg:text-1xl xl:text-3xl">
+      Too many companies bear the cost of uncertainty - often without even
+      realizing it.
+    </p>
+    <ul class="mt-10 lg:space-y-2 xl:space-y-3">
+      @for (item of uncertainties; track $index) {
+        <li class="flex items-center">
+          <span
+            class="lg:w-1 lg:h-1 xl:w-2 xl:h-2 bg-[#FFF] rounded-full inline-block mr-4"></span
+          >{{ item }}
+        </li>
+      }
+    </ul>
+  </div>
+
+  <div
+    class="text-left lg:mt-[7%] xl:mt-[7%] 2xl:mt-[10%] text-center lg:px-22 xl:px-32 2xl:px-28">
+    <h2
+      class="text-4xl md:text-7xl lg:text-4xl xl:text-6xl 2xl:text-7xl font-bold">
+      What if you could...
+    </h2>
+    <p
+      class="lg:mt-[2%] xl:mt-[4%] text-lg lg:text-1xl xl:text-3xl 2xl:text-5xl">
+      Combine the privacy and convenience of Im and voice with the power of
+      structured data and analytics, all in one app?
+    </p>
+  </div>
+</section>
