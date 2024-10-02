@@ -1,8 +1,12 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component } from '@angular/core';
+import { initFlowbite } from 'flowbite';
 
 @Component({
   selector: 'app-landing',
   templateUrl: './landing.component.html',
-  styleUrl: './landing.component.css',
 })
-export class LandingComponent {}
+export class LandingComponent implements AfterViewInit {
+  ngAfterViewInit(): void {
+    initFlowbite();
+  }
+}

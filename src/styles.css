@@ -1,1 +1,92 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+    --primary-color: #f3f3f3;
+    --secondary-color: #151515;
+    --tertiary-color: #1E2B2E;
+
+    --bg-primary-color: #151515;
+    --bg-primary-light-color: #1a1a1a;
+    --bg-transparent: rgba(255, 255, 255, 0);
+    --bg-scroll-color: rgba(21, 21, 21, 0);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}  
+
+
+header {
+    background-color: var(--bg-transparent);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.full-screen {
+    height: 100vh;
+}
+
+.bg-primary {
+    background-color: var(--bg-primary-color);
+}
+
+.bg-primary-light {
+    background-color: var(--bg-primary-light-color);
+}
+
+.bg-about {
+    background: linear-gradient(180deg, var(--secondary-color) 0%, var(--tertiary-color) 50%, var(--secondary-color) 100%);
+}
+
+.input-style {
+   border-radius: 15px;
+    border: 1px solid #868686;
+    background: rgba(26, 43, 40, 0.00);
+}
+
+.input-style:focus {
+    border-color: #2563EB; /* border-blue-600 */
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.5); /* ring-blue-600 */
+}
+
+/* custom carousel */
+[data-carousel-item] {
+    transition: transform 5s ease, opacity 1.5s ease;
+}
+
+.carousel-button {
+    width: 40px;
+    height: 10px;
+    background-color: #d3d3d3;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, width 0.3s ease-in-out;
+}
+  
+.carousel-button[aria-current="true"] {
+    background-color: var(--bg-primary-color);
+    width: 40px;
+}
+  
+.carousel-button:hover {
+    background-color: #999999;
+}
+
+.carousel-text {
+    text-shadow: 4px 6px 6px rgba(0, 0, 0, 0.7);
+}
+
+/* Fade in landing page  */
+
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(15px) scale(0.95);
+    transition: opacity 2s ease-in-out, transform 2s ease-in-out;
+}
+  
+.fade-in-up.active {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}

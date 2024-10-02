@@ -1,0 +1,63 @@
+.container-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.icon-position {
+  width: 550px;
+  height: 500px;
+  object-fit: cover;
+}
+
+/* Responsive sizes for images on large screens */
+@media (max-width: 1280px) {
+  .icon-position {
+    width: 450px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .icon-position {
+    width: 400px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .icon-position {
+    width: 350px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 640px) {
+  .icon-position {
+    width: 300px;
+    height: 250px;
+  }
+}
+
+/* Specific styles for mobile screens smaller than 768px */
+.container-mobile {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 26%;
+}
+
+.icon-mobile {
+  width: 74%; 
+  height: 76%;
+  object-fit: contain;
+}

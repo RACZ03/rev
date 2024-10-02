@@ -1,1 +1,2 @@
-export * from './demo.entity';
+export * from './contact.entity';
+export * from './newsletter.entity';

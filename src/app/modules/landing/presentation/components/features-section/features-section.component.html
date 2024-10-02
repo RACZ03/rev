@@ -1,0 +1,59 @@
+<section
+  #animatedSection
+  class="relative text-center justify-center items-center px-6 md:px-12 lg:px-24 fade-in-up"
+  [ngClass]="{ active: isVisible }">
+  <h1
+    class="font-bold text-2xl md:text-2xl xl:text-4xl 2xl:text-6xl mt-[5%] md:mt-[5%]">
+    {{ 'LANDING_PAGE.PERFORMANCE' | translate }}
+  </h1>
+  <div
+    class="flex flex-row flex-wrap justify-center items-center mb-12 mt-[4%]">
+    @for (item of features; track $index) {
+      <div class="flex flex-col items-center w-[33%] md:w-[30%]">
+        <div
+          class="border-3 border-current rounded-full w-14 h-14 md:w-22 :h-22 flex items-center justify-center text-green-500">
+          <img
+            [src]="'./assets/img/features/' + item.icon"
+            [alt]="'features ' + $index" />
+        </div>
+        <p
+          class="mt-4 text-center text-[10px] md:text-lg lg:text-1xl xl:text-2xl mt-4">
+          {{ item.text | translate }}
+        </p>
+      </div>
+    }
+  </div>
+</section>
+
+<section
+  #animatedSection2
+  class="relative bg-primary h-auto pb-[6%] mt-[5%] text-left px-4 md:px-12 lg:px-24 overflow-hidden fade-in-up"
+  [ngClass]="{ active: isVisible2 }">
+  <div class="md:w-[60%]">
+    <h2
+      class="mt-[6%] text-2xl md:text-2xl lg:text-3xl xl:text-5xl 2xl:text-7xl font-bold">
+      {{ 'LANDING_PAGE.STILL_PAYING' | translate }}
+    </h2>
+
+    <div class="transition-all duration-500 flex justify-start mb-12">
+      <ul class="mt-10 lg:space-y-2 xl:space-y-3">
+        @for (item of uncertainties; track $index) {
+          <li class="flex items-center">
+            <span
+              class="w-1 h-1 xl:w-2 xl:h-2 bg-[#FFF] rounded-full inline-block mr-4"></span>
+            {{ item | translate }}
+          </li>
+        }
+      </ul>
+    </div>
+  </div>
+  <img
+    src="./assets/img/still-life-documents-stack 1.png"
+    class="hidden lg:block absolute bottom-0 right-0 opacity-80 h-full rounded-tl-[70px]"
+    alt="still life" />
+
+  <img
+    src="./assets/img/still-life-documents-stack 1.png"
+    class="block lg:hidden mt-8 mx-auto opacity-80 w-[90%] rounded-tl-[70px]"
+    alt="still life" />
+</section>

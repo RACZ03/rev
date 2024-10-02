@@ -1,11 +1,11 @@
 import { Provider } from '@angular/core';
 
-import { DemoRepository } from '../domain/repositories';
-import { DemoImplRepository } from '../data/repositories';
+import { MailImplRepository } from '../data/repositories';
+import { MailRepository } from '../domain/repositories';
 
 export const landingConfig: Provider[] = [
   {
-    provide: DemoRepository,
-    useClass: DemoImplRepository,
+    provide: MailRepository,
+    useClass: MailImplRepository,
   },
 ];

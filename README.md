@@ -19,6 +19,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
       - [Modules](#modules)
       - [Theme](#theme)
       - [Assets and Environments](#assets-and-environments)
+      - [.env file](#env-file)
   - [:computer: Running the application](#computer-running-the-application)
 
   - [:microscope: Static code analysis](#microscope-static-code-analysis)
@@ -118,6 +119,7 @@ src/
     └── app.module.ts
 assets/
 environments/
+.env
 
 ```
 
@@ -296,6 +298,29 @@ To generate a production build, run:
 ```bash
 npm run build
 ```
+
+#### .env file
+
+To manage environment-specific variables, you can use a `.env` file. The project comes with a `.env.example` file that can be copied and renamed to `.env`, where you can define your own values.
+
+The `.env.example` file includes the following variables:
+
+```bash
+# For local usage you can copy this file to .env and change values.
+
+# API URL
+NG_APP_API_URL=http://127.0.0.1:4200
+
+# Firebase configuration
+NG_APP_API_KEY=api-key
+NG_APP_AUTH_DOMAIN=auth-domain
+NG_APP_PROYECT_ID=proyect-id
+NG_APP_STORAGE_BUCKET=storage-bucket
+NG_APP_MESSAGING_SENDER_ID=messaging-sender-id
+NG_APP_APP_ID=app-id
+NG_APP_MEASUREMENT_ID=measurement-id
+
+
 
 ## :handshake: Contributing
 

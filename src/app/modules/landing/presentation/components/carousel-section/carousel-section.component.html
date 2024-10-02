@@ -1,0 +1,154 @@
+<div id="default-carousel" class="relative" data-carousel="static">
+  <div class="relative h-screen overflow-hidden rounded-lg">
+    <!-- Item 1 -->
+    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+      <img
+        src="./assets/img/banner/1.png"
+        class="hidden md:block absolute w-full h-full z-0"
+        alt="slide1" />
+      <img
+        src="./assets/img/banner/4.png"
+        class="block md:hidden absolute w-full h-full z-0"
+        alt="slide1_mobile" />
+      <div class="container-mobile block md:hidden"></div>
+      <div
+        class="absolute inset-0 flex flex-col justify-center items-start mt-[-40%] md:mt-0 px-4 lg:px-20 z-10 text-white md:w-[60%]">
+        <h1
+          class="font-bold text-2xl md:text-xl xl:text-4xl 2xl:text-6xl transition-opacity carousel-text"
+          [ngClass]="{
+            'opacity-0': isActiveFadeOut,
+            'opacity-100': isActiveFadeIn,
+          }"
+          [ngStyle]="{
+            'transition-duration': isActiveFadeIn ? '1s' : '0s',
+            'transition-delay': isActiveFadeIn ? '0.7s' : '0s',
+          }">
+          {{ 'LANDING_PAGE.CAROUSEL.ITEM_TITLE_1' | translate }}
+        </h1>
+        <p
+          class="text-sm xl:text-2xl 2xl:text-3xl mt-8 transition-opacity carousel-text"
+          [ngClass]="{
+            'opacity-0': isActiveFadeOut,
+            'opacity-100': isActiveFadeIn,
+          }"
+          [ngStyle]="{
+            'transition-duration': isActiveFadeIn ? '1s' : '0s',
+            'transition-delay': isActiveFadeIn ? '0.7s' : '0s',
+          }">
+          {{ 'LANDING_PAGE.CAROUSEL.ITEM_DESCRIPTION_1' | translate }}
+        </p>
+      </div>
+    </div>
+    <!-- Item 2 -->
+    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+      <img
+        src="./assets/img/banner/2.png"
+        class="hidden md:block absolute w-full h-full z-0"
+        alt="slide1" />
+      <img
+        src="./assets/img/banner/5.png"
+        class="block md:hidden absolute w-full h-full z-0"
+        alt="slide2_mobile" />
+      <div
+        class="absolute inset-0 flex flex-col justify-center items-start mt-[-50%] md:mt-0 px-4 lg:px-20 z-10 text-white md:w-[65%]">
+        <h1
+          class="font-bold text-2xl md:text-2xl xl:text-4xl 2xl:text-6xl transition-opacity carousel-text"
+          [ngClass]="{
+            'opacity-0': isActiveFadeOut,
+            'opacity-100': isActiveFadeIn,
+          }"
+          [ngStyle]="{
+            'transition-duration': isActiveFadeIn ? '1s' : '0s',
+            'transition-delay': isActiveFadeIn ? '0.7s' : '0s',
+          }">
+          {{ 'LANDING_PAGE.CAROUSEL.ITEM_TITLE_2' | translate }}
+        </h1>
+        <p
+          class="text-sm lg:text-md xl:text-2xl 2xl:text-3xl mt-8 transition-opacity carousel-text"
+          [ngClass]="{
+            'opacity-0': isActiveFadeOut,
+            'opacity-100': isActiveFadeIn,
+          }"
+          [ngStyle]="{
+            'transition-duration': isActiveFadeIn ? '1s' : '0s',
+            'transition-delay': isActiveFadeIn ? '0.7s' : '0s',
+          }">
+          {{ 'LANDING_PAGE.CAROUSEL.ITEM_DESCRIPTION_2' | translate }}
+        </p>
+      </div>
+    </div>
+    <!-- Item 3 -->
+    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+      <img
+        src="./assets/img/banner/3.png"
+        class="hidden md:block absolute w-full h-full z-0"
+        alt="slide3" />
+      <div class="container-right hidden md:flex"></div>
+      <img
+        src="./assets/img/banner/6.png"
+        class="block md:hidden absolute w-full h-full z-0"
+        alt="slide3_mobile" />
+      <div class="container-mobile block md:hidden mb-[20%]"></div>
+      <div
+        class="absolute inset-0 flex flex-col justify-center items-start mt-[-50%] md:mt-0 px-4 lg:px-20 z-10 text-white md:w-[60%]">
+        <h1
+          class="font-bold text-2xl md:text-2xl xl:text-4xl 2xl:text-6xl transition-opacity carousel-text"
+          [ngClass]="{
+            'opacity-0': isActiveFadeOut,
+            'opacity-100': isActiveFadeIn,
+          }"
+          [ngStyle]="{
+            'transition-duration': isActiveFadeIn ? '1s' : '0s',
+            'transition-delay': isActiveFadeIn ? '0.7s' : '0s',
+          }">
+          {{ 'LANDING_PAGE.CAROUSEL.ITEM_TITLE_3' | translate }}
+        </h1>
+        <p
+          class="text-sm lg:text-md xl:text-2xl 2xl:text-3xl mt-8 transition-opacity carousel-text"
+          [ngClass]="{
+            'opacity-0': isActiveFadeOut,
+            'opacity-100': isActiveFadeIn,
+          }"
+          [ngStyle]="{
+            'transition-duration': isActiveFadeIn ? '1s' : '0s',
+            'transition-delay': isActiveFadeIn ? '0.7s' : '0s',
+          }">
+          {{ 'LANDING_PAGE.CAROUSEL.ITEM_DESCRIPTION_3' | translate }}
+        </p>
+        <p
+          class="text-sm lg:text-md xl:text-2xl 2xl:text-3xl mt-2 transition-opacity carousel-text"
+          [ngClass]="{
+            'opacity-0': isActiveFadeOut,
+            'opacity-100': isActiveFadeIn,
+          }"
+          [ngStyle]="{
+            'transition-duration': isActiveFadeIn ? '1s' : '0s',
+            'transition-delay': isActiveFadeIn ? '0.7s' : '0s',
+          }">
+          {{ 'LANDING_PAGE.CAROUSEL.ITEM_DESCRIPTION_4' | translate }}
+        </p>
+      </div>
+    </div>
+  </div>
+  <div
+    class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+    <button
+      type="button"
+      class="carousel-button"
+      aria-current="true"
+      aria-label="Slide 1"
+      data-carousel-slide-to="0"></button>
+    <button
+      type="button"
+      class="carousel-button"
+      aria-current="false"
+      aria-label="Slide 2"
+      data-carousel-slide-to="1"></button>
+    <button
+      type="button"
+      class="carousel-button"
+      aria-current="false"
+      aria-label="Slide 3"
+      data-carousel-slide-to="2"></button>
+  </div>
+</div>

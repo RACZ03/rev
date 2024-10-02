@@ -1,1 +1,2 @@
-export * from './demo.mapper';
+export * from './contact.mapper';
+export * from './newsletter.mapper';

@@ -1,1 +1,1 @@
-export * from './demo-impl.repository';
+export * from './mail-impl.repository';

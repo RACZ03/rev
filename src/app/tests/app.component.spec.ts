@@ -1,13 +1,22 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { TestBed, async } from '@angular/core/testing';
-import { RouterTestingModule } from '@angular/router/testing';
+import { RouterModule } from '@angular/router';
 import { AppComponent } from '@app/app.component';
+import { Location } from '@angular/common';
+import { Router } from '@angular/router';
 
 describe('AppComponent', () => {
+  let location: Location;
+  let router: Router;
+
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [RouterTestingModule],
+      imports: [RouterModule.forRoot([])],
       declarations: [AppComponent],
     }).compileComponents();
+
+    router = TestBed.inject(Router);
+    location = TestBed.inject(Location);
   }));
 
   it('should create the app', () => {

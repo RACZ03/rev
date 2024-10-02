@@ -1,0 +1,109 @@
+{
+  "API_RESPONSES": {
+    "CONTACT_SUCCESS": "Contact form successfully submitted.",
+    "CONTACT_ERROR": "Error submitting the contact form.",
+    "NEWSLETTER_SUCCESS": "Newsletter email sent successfully.",
+    "NEWSLETTER_ERROR": "Error sending the newsletter email."
+  },
+  "FOOTER": {
+    "COPYRIGHT": "Copyright © {{year}} Revert | Powered by Revert",
+    "DESCRIPTION": "We build connectivity for the commodity markets"
+  },
+  "HEADER": {
+    "ABOUT_US": "About us",
+    "AI_TRADING_ASSISTANT": "AI assistant",
+    "CONTACT": "Contact",
+    "FREIGHT": "Freight",
+    "HOME": "Home",
+    "INSTANT_MESSAGING": "Instant messaging",
+    "MARINE_FUELS": "Marine fuels",
+    "MARKETS": "Markets",
+    "MENU": "Menu",
+    "OUR_TECH": "Our tech",
+    "SIGN_IN": "Sign In",
+    "SIGN_UP": "Sign Up",
+    "SOCIAL_FEATURES": "Social features",
+    "SMART_TEXT_RECOGNITION": "Smart text recognition",
+    "VOICE": "Voice"
+  },
+  "LANDING_PAGE": {
+    "ABOUT": {
+      "CONTACT_DETAILS": {
+        "ADDRESS": "Physical Address: ",
+        "ADDRESS_EXAMPLE": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "EMAIL": "Email: ",
+        "EMAIL_EXAMPLE": "example@revert.com",
+        "PHONE": "Phone Number: ",
+        "PHONE_EXAMPLE": ": 0000000000000"
+      },
+      "DESCRIPTION": "Our mission is to facilitate trading and collaboration within the commodity markets. Our solutions enhance decision-making, performance, and security.",
+      "GET_IN_TOUCH": "Get in Touch",
+      "MARINE_FUELS_TITLE": "Shipping will look radically different by the time the global trade has decarbonised",
+      "MARINE_FUELS_DESCRIPTION": "We combine SaaS with advisory expertise to help the new marine fuels’ players access the markets during this transition and achieve their net-zero targets",
+      "MESSAGE_PLACEHOLDER": "Message",
+      "NAME_PLACEHOLDER": "Name",
+      "SEND_MESSAGE": "Send Message",
+      "TITLE": "About us",
+      "EMAIL_PLACEHOLDER": "Email"
+    },
+    "BENEFITS": {
+      "AVOID_BLIND_SPOTS": "Avoid blind spots",
+      "AVOID_BLIND_SPOTS_DESCRIPTION": "Easily monitor and surface critical insights",
+      "ENTERPRISE_GRADE_SECURITY": "Enterprise-grade security",
+      "ENTERPRISE_GRADE_SECURITY_DESCRIPTION": "Protect your company's data with the highest industry standards — including zero trust security model, modern authentication practices, and secure data encryption.",
+      "EXTENSIVE_CONTENT_LIBRARY": "Extensive content library",
+      "TIME_SAVINGS": "Time savings",
+      "TIME_SAVINGS_DESCRIPTION": "Let our AI technology do the work for you. Spend less time on time-consuming, manual tasks and on analysis."
+    },
+    "CAROUSEL": {
+      "ITEM_DESCRIPTION_1": "Revert is the decision support and communication platform, dedicated to the commodity trading community.",
+      "ITEM_DESCRIPTION_2": "Combine the ease and confidentiality of Instant Messaging with the power of AI insights, all in one place",
+      "ITEM_DESCRIPTION_3": "Get insights where and when you need them to make confident decisions quickly.",
+      "ITEM_DESCRIPTION_4": "Elevate your decision making with first-party and third-party data",
+      "ITEM_TITLE_1": "Commodity Trading is a People’s Business",
+      "ITEM_TITLE_2": "It’s your Game, your Way – now with greater insight s and security",
+      "ITEM_TITLE_3": "Interact with Data in a Human way"
+    },
+    "FEATURES": {
+      "CONNECT_MORE_BOTS": "Connect more dots",
+      "GET_THERE_FASTER": "Get there faster",
+      "LEAVE_NOTHING_TO_CHANCE": "Leave nothing to chance"
+    },
+    "LEARN_MORE": "Learn more",
+    "PERFORMANCE": "Boost the performance of your team",
+    "REVERT_DESCRIPTION_2": "All the perspectives you need, in one place",
+    "REVERT": {
+      "BROKERS_TRADERS_TITLE": "Brokers & Traders",
+      "BROKERS_TRADERS_ITEM_1": "Reach more clients than ever before",
+      "BROKERS_TRADERS_ITEM_2": "Automate painful, manual tasks",
+      "BUYERS_TITLE": "Buyers",
+      "BUYERS_ITEM_1": "Reduce search costs",
+      "CREDIT_TITLE": "Credit",
+      "CREDIT_ITEM_1": "Distinguish the signals from the noise",
+      "CREDIT_ITEM_2":  "Surface insights on private markets",
+      "SELLERS_TITLE": "Sellers",
+      "SELLERS_ITEM_1": "See more, win more",
+      "SELLERS_ITEM_2": "Boost lead generation",
+      "SELLERS_ITEM_3": "Reduce marketing cost",
+      "SECTION_TITLE": "Revert is for everyone"
+    },
+    "SIGNUP_NEWSLETTER": {
+      "CONSENT": "I consent to Revert to send me newsletters regarding the platform, news and trends within the commodity sector.",
+      "EMAIL_PLACEHOLDER": "Email",
+      "SIGNUP_BUTTON": "Signup for Newsletter"
+    },
+    "STILL_PAYING": "Still paying for the cost of uncertainty?",
+    "TOO_MANY_COMPANIES": "Too many companies bear the cost of uncertainty - often without even realizing it.",
+    "UNCERTAINTIES": {
+      "EXPOSURE_FRAUDS": "Increasing exposure to frauds",
+      "RISK_APPRAISAL": "Inefficient counterparty risk appraisal process",
+      "SUPPLY_DEMAND": "Inefficient matching of supply and demand",
+      "UNSTRUCTURED_DATA": "Unstructured data slows down decision making"
+    },
+    "WHY_REVERT": {
+      "DESCRIPTION": "A powerful platform that works for you",
+      "INFORMATION_OVERWHELMING": "Information is overwhelming — but it doesn’t have to be. We keep refining our AI and NLP technology, so you can easily surface and track insights — all in one place.",
+      "TITLE": "Why Revert?"
+    }
+  }
+}
