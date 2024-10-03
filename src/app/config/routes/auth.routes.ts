@@ -12,8 +12,8 @@ export const routes: Routes = [
       {
         path: 'sign-up',
         loadChildren: () =>
-          import('../../auth/create-password/create-password.module').then(
-            m => m.CreatePasswordModule
+          import('../../auth/register/sign-up.module').then(
+            m => m.SignUpModule
           ),
       },
 
